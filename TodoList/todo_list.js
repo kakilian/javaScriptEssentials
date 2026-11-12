@@ -40,3 +40,12 @@ function clearCompletedTasks() {
         displayTasks();
     }
 
+function clearTasks() {
+    tasks.length = 0;
+    displayTasks(null);
+}   
+
+document.getElementById('clearTasksBtn')
+    .addEventListener('click', clearTasks);
+
+
